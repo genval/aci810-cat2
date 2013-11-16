@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 			//ir a login			
 		}
 		else{
-			//ir a register
+			onClick(view);//ir a register
 		}
 		
 	}
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	public void OnClick(View view){
+	public void onClick(View view){
 		Intent intent = new Intent(this,AppActivity.class);
 		EditText email = (EditText)findViewById(R.id.emailField);
 		String email1 = email.getText().toString(); 

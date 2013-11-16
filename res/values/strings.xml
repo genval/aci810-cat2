@@ -21,5 +21,7 @@
     <string name="title_activity_app">AppActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="Profile">Profile</string>
-	<string name="Setting">Setting</string>
+    <string name="Setting">Setting</string>
+    <string name="title_activity_app_user">AppUser</string>
+
 </resources>

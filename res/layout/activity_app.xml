@@ -20,6 +20,7 @@
         android:layout_marginRight="20dip"        
         style="?android:attr/buttonBarButtonStyle"
         android:background="#0099CC"
+        android:onClick="OnProfile"
         android:text="@string/Profile" />
 
     <Button

@@ -45,11 +45,13 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_app=0x7f030000;
-        public static final int activity_main=0x7f030001;
+        public static final int activity_app_user=0x7f030001;
+        public static final int activity_main=0x7f030002;
     }
     public static final class menu {
         public static final int app=0x7f070000;
-        public static final int main=0x7f070001;
+        public static final int app_user=0x7f070001;
+        public static final int main=0x7f070002;
     }
     public static final class string {
         public static final int Edad=0x7f050008;
@@ -72,6 +74,7 @@ public final class R {
         public static final int pais=0x7f05000f;
         public static final int sexo=0x7f05000c;
         public static final int title_activity_app=0x7f050011;
+        public static final int title_activity_app_user=0x7f050015;
         public static final int user=0x7f050009;
     }
     public static final class style {
