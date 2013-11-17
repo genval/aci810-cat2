@@ -26,15 +26,15 @@ public class AppUser extends Activity {
 		Boolean sexM = shadPref.getBoolean(MainActivity.MASCULINO,false);
 		Boolean sexO = shadPref.getBoolean(MainActivity.OTRO,false);	
 		
-		TextView user1 = (TextView)findViewById(R.id.emailField);
+		TextView user1 = (TextView)findViewById(R.id.userA);
 		user1.setText(user);
-		TextView email1 = (TextView)findViewById(R.id.editText1);
+		TextView email1 = (TextView)findViewById(R.id.emailView);
 		email1.setText(email);
-		TextView edad1 = (TextView)findViewById(R.id.edad);
+		TextView edad1 = (TextView)findViewById(R.id.edadView);
 		edad1.setText(edad);
-		EditText pass1 = (EditText)findViewById(R.id.passwordView);
+		EditText pass1 = (EditText)findViewById(R.id.password12);
 		pass1.setText(pass);
-		EditText pais1 = (EditText)findViewById(R.id.pais);
+		EditText pais1 = (EditText)findViewById(R.id.camPais);
 		pais1.setText(pais);
 		RadioButton sexF1 = (RadioButton)findViewById(R.id.radio0);
 		sexF1.setChecked(sexF);
