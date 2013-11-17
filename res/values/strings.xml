@@ -13,6 +13,7 @@
     <string name="user">User</string>
     <string name="masculino">M</string>
     <string name="femenino">F</string>
+    <string name="otro">Otro</string>
     <string name="sexo">Sexo</string>
     <string name="editText2">Edad</string>
     <string name="PaisView">Pais</string>
@@ -23,5 +24,11 @@
     <string name="Profile">Profile</string>
     <string name="Setting">Setting</string>
     <string name="title_activity_app_user">AppUser</string>
-
+    <string name="user_act">User</string>
+	<string name="userA">User</string>
+	<string name="Profile1">Profile</string>
+	<string name="email1">Email</string>
+	<string name="emailView">Email</string>
+	<string name="edad1">Edad</string>
+	<string name="edadView">Edad</string>
 </resources>

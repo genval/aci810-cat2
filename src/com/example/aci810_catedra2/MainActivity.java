@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 	public final static String PASSWORD = "com.example.aci810_catedra2.PASSWORD";
 	public final static String FEMENINO = "com.example.aci810_catedra2.FEMENINO";
 	public final static String MASCULINO = "com.example.aci810_catedra2.MASCULINO";
-	
+	public final static String OTRO = "com.example.aci810_catedra2.OTRO";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +65,8 @@ public class MainActivity extends Activity {
 		Boolean rb0= radBut1.isChecked();
 		RadioButton radBut2 = (RadioButton)findViewById(R.id.radio1);
 		Boolean rb1 = radBut2.isChecked();
+		RadioButton radBut3 = (RadioButton)findViewById(R.id.radio2);
+		Boolean rb2 = radBut3.isChecked();
 		
 		SharedPreferences.Editor editor = shadPref.edit();
 		
@@ -76,7 +78,7 @@ public class MainActivity extends Activity {
 		editor.putInt(RADIO_GROUP, rg1);
 		editor.putBoolean(FEMENINO, rb0);
 		editor.putBoolean(MASCULINO, rb1);
-		
+		editor.putBoolean(OTRO, rb2);
 		editor.commit();
 		startActivity(intent);		
 		
