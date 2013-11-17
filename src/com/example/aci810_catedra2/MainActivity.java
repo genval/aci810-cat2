@@ -28,14 +28,14 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		//setContentView(R.layout.activity_main);
 		
-		Boolean b = shadPref.getBoolean("is-Registred",false) ;	
-		if(b){
-			onLogin(view);//ir a login			
+		Boolean isResgistred = shadPref.getBoolean("is-Registred",false) ;	
+		if(isResgistred){
+			setContentView(R.layout.activity_login);//ir a login			
 		}
 		else{
-			onClickRegister(view);//ir a register
+			setContentView(R.layout.activity_main);//ir a register
 		}
 		
 	}
