@@ -31,7 +31,8 @@ public class MainActivity extends Activity {
 		SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
 		Boolean isResgistred = shadPref.getBoolean("is-Registred",false) ;	
 		if(isResgistred){
-			setContentView(R.layout.activity_login);//ir a login			
+			setContentView(R.layout.activity_login);//ir a login	
+			
 		}
 		else{
 			setContentView(R.layout.activity_main);//ir a register

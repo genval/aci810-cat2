@@ -11,8 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity {
-	SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
-	Boolean isResgistred = shadPref.getBoolean("is-Registred",true) ;
+
 	public final static String EMAIL = "com.example.aci810_catedra2.EMAIL";
 	public final static String PASSWORD = "com.example.aci810_catedra2.PASSWORD";
 	
@@ -32,6 +31,10 @@ public class LoginActivity extends Activity {
 	
 	public void onLogin(View view){
 		Intent intent = new Intent(this,AppActivity.class);
+		
+		SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
+		
+		
 		
 		EditText email1 = (EditText)findViewById(R.id.emailField);
 		String emailIngresado = email1.getText().toString(); 
