@@ -32,10 +32,10 @@ public class MainActivity extends Activity {
 		
 		Boolean b = shadPref.getBoolean("is-Registred",false) ;	
 		if(b){
-			//ir a login			
+			onLogin(view);//ir a login			
 		}
 		else{
-			onClick(view);//ir a register
+			onClickRegister(view);//ir a register
 		}
 		
 	}
@@ -85,7 +85,8 @@ public class MainActivity extends Activity {
 	}
 	
 	public void onLogin(View view){
-		
+		Intent intent = new Intent(this,AppActivity.class);
+		startActivity(intent);
 	}
 
 }

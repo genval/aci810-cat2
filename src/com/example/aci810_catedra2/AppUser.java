@@ -21,7 +21,8 @@ public class AppUser extends Activity {
 		String pais = shadPref.getString(MainActivity.PAIS, "not set");
 		Boolean sexF = shadPref.getBoolean(MainActivity.FEMENINO, false);
 		Boolean sexM = shadPref.getBoolean(MainActivity.MASCULINO,false);
-		Boolean sexO = shadPref.getBoolean(MainActivity.OTRO,false);
+		Boolean sexO = shadPref.getBoolean(MainActivity.OTRO,false);	
+		
 	
 		
 	}
