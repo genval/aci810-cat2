@@ -49,15 +49,15 @@ public class MainActivity extends Activity {
 	public void onClickRegister(View view){
 		Intent intent = new Intent(this,AppActivity.class);
 		
-		EditText email = (EditText)findViewById(R.id.emailField);
+		EditText email = (EditText)findViewById(R.id.emailField); 
 		String email1 = email.getText().toString(); 
 		EditText user = (EditText)findViewById(R.id.editText1);
 		String user1 = user.getText().toString();
 		EditText password = (EditText)findViewById(R.id.password12);
 		String pass = password.getText().toString();
-		EditText edad23 = (EditText)findViewById(R.id.edad);
+		EditText edad23 = (EditText)findViewById(R.id.editText2);
 		String edad1 = edad23.getText().toString();
-		EditText pais = (EditText)findViewById(R.id.pais);
+		EditText pais = (EditText)findViewById(R.id.Pais);
 		String pais1 = pais.getText().toString();
 		RadioGroup rg = (RadioGroup)findViewById(R.id.radioGroup1);
 		int rg1 = rg.getCheckedRadioButtonId();
