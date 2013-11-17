@@ -32,6 +32,9 @@
     <string name="edad1">Edad</string>
     <string name="edadView">Edad</string>
     <string name="Login">Login</string>
+    <string name="cambioPass">Cambio Pass</string>
+    <string name="cambPais">Pais</string>
+    <string name="paisView">Cambio Pais</string>
     <string name="title_activity_login">LoginActivity</string>
 
 </resources>
