@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class LoginActivity extends Activity {
 	SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
-	Boolean isResgistred = shadPref.getBoolean("is-Registred",true) ;
+	Boolean isResgistred = shadPref.getBoolean("prefLog",true) ;
 	public final static String EMAIL = "com.example.aci810_catedra2.EMAIL";
 	public final static String PASSWORD = "com.example.aci810_catedra2.PASSWORD";
 	
@@ -39,7 +39,6 @@ public class LoginActivity extends Activity {
 		String passIngresada= pass1.getText().toString();
 		String email = shadPref.getString(EMAIL,"");
 		String pass  = shadPref.getString(PASSWORD, "");
-		
 		
 		
 		

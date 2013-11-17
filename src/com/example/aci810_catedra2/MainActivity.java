@@ -14,7 +14,6 @@ import android.widget.RadioGroup;
 public class MainActivity extends Activity {
 	
 	
-	SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
 	public final static String RADIO_GROUP = "com.example.aci810_catedra2.RADIO_GROUP";
 	public final static String EMAIL = "com.example.aci810_catedra2.EMAIL";
 	public final static String PAIS = "com.example.aci810_catedra2.PAIS";
@@ -28,15 +27,15 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main);
 		
-		Boolean isResgistred = shadPref.getBoolean("is-Registred",false) ;	
-		if(isResgistred){
-			setContentView(R.layout.activity_login);//ir a login			
-		}
-		else{
-			setContentView(R.layout.activity_main);//ir a register
-		}
+		//Boolean isResgistred = shadPref.getBoolean("is-Registred",false) ;	
+		//if(isResgistred){
+			//setContentView(R.layout.activity_login);//ir a login			
+		//}
+		//else{
+			//setContentView(R.layout.activity_main);//ir a register
+		//}
 		
 	}
 
@@ -67,7 +66,8 @@ public class MainActivity extends Activity {
 		Boolean rb1 = radBut2.isChecked();
 		RadioButton radBut3 = (RadioButton)findViewById(R.id.radio2);
 		Boolean rb2 = radBut3.isChecked();
-		
+
+		SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
 		SharedPreferences.Editor editor = shadPref.edit();
 		
 		editor.putString(EMAIL,email1);
