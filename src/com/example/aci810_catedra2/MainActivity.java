@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	public void onClick(View view){
+	public void onClickRegister(View view){
 		Intent intent = new Intent(this,AppActivity.class);
 		EditText email = (EditText)findViewById(R.id.emailField);
 		String email1 = email.getText().toString(); 
@@ -81,6 +81,10 @@ public class MainActivity extends Activity {
 		editor.putBoolean(OTRO, rb2);
 		editor.commit();
 		startActivity(intent);		
+		
+	}
+	
+	public void onLogin(View view){
 		
 	}
 
