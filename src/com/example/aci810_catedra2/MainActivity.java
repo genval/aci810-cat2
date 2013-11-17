@@ -28,14 +28,14 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		//Boolean isResgistred = shadPref.getBoolean("is-Registred",false) ;	
-		//if(isResgistred){
-			//setContentView(R.layout.activity_login);//ir a login			
-		//}
-		//else{
-			//setContentView(R.layout.activity_main);//ir a register
-		//}
+		SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
+		Boolean isResgistred = shadPref.getBoolean("is-Registred",false) ;	
+		if(isResgistred){
+			setContentView(R.layout.activity_login);//ir a login			
+		}
+		else{
+			setContentView(R.layout.activity_main);//ir a register
+		}
 		
 	}
 
@@ -48,14 +48,15 @@ public class MainActivity extends Activity {
 	
 	public void onClickRegister(View view){
 		Intent intent = new Intent(this,AppActivity.class);
+		
 		EditText email = (EditText)findViewById(R.id.emailField);
 		String email1 = email.getText().toString(); 
 		EditText user = (EditText)findViewById(R.id.editText1);
 		String user1 = user.getText().toString();
 		EditText password = (EditText)findViewById(R.id.password12);
 		String pass = password.getText().toString();
-		EditText edad = (EditText)findViewById(R.id.edad);
-		String edad1 = edad.getText().toString();
+		EditText edad23 = (EditText)findViewById(R.id.edad);
+		String edad1 = edad23.getText().toString();
 		EditText pais = (EditText)findViewById(R.id.pais);
 		String pais1 = pais.getText().toString();
 		RadioGroup rg = (RadioGroup)findViewById(R.id.radioGroup1);

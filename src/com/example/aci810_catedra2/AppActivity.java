@@ -21,7 +21,7 @@ public class AppActivity extends Activity {
 		return true;
 	}
 
-	public void OnProfile(View view){
+	public void onProfile(View view){
 		Intent intent = new Intent(this,AppUser.class);
 		startActivity(intent);
 	}
