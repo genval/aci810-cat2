@@ -84,9 +84,6 @@ public class MainActivity extends Activity {
 		
 	}
 	
-	public void onLogin(View view){
-		Intent intent = new Intent(this,AppActivity.class);
-		startActivity(intent);
-	}
+	
 
 }

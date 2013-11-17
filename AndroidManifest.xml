@@ -30,6 +30,10 @@
             android:name="com.example.aci810_catedra2.AppUser"
             android:label="@string/title_activity_app_user" >
         </activity>
+        <activity
+            android:name="com.example.aci810_catedra2.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
     </application>
 
 </manifest>
