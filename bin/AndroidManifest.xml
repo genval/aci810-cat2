@@ -23,10 +23,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:parentActivityName="com.example.aci810_catedra2.MainActivity"
             android:name="com.example.aci810_catedra2.AppActivity"
             android:label="@string/title_activity_app" >
         </activity>
         <activity
+            android:parentActivityName="com.example.aci810_catedra2.AppActivity"
             android:name="com.example.aci810_catedra2.AppUser"
             android:label="@string/title_activity_app_user" >
         </activity>
