@@ -36,5 +36,6 @@
     <string name="cambPais">Pais</string>
     <string name="paisView">Cambio Pais</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="guardar">guardar</string>
 
 </resources>

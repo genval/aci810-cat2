@@ -24,21 +24,22 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int Pais=0x7f08001c;
-        public static final int action_settings=0x7f08001d;
+        public static final int Pais=0x7f08001d;
+        public static final int action_settings=0x7f08001e;
         public static final int button1=0x7f080000;
         public static final int button2=0x7f080001;
         public static final int camPais=0x7f08000c;
-        public static final int edad=0x7f080019;
+        public static final int edad=0x7f08001a;
         public static final int edad1=0x7f080007;
         public static final int edadView=0x7f080008;
-        public static final int editText1=0x7f080018;
-        public static final int editText2=0x7f08001a;
+        public static final int editText1=0x7f080019;
+        public static final int editText2=0x7f08001b;
         public static final int email1=0x7f080005;
-        public static final int emailField=0x7f080013;
+        public static final int emailField=0x7f080014;
         public static final int emailView=0x7f080006;
-        public static final int login=0x7f080015;
-        public static final int pais=0x7f08001b;
+        public static final int guardar=0x7f080012;
+        public static final int login=0x7f080016;
+        public static final int pais=0x7f08001c;
         public static final int paisView=0x7f08000b;
         public static final int password12=0x7f08000a;
         public static final int passwordView=0x7f080009;
@@ -47,10 +48,10 @@ public final class R {
         public static final int radio1=0x7f080010;
         public static final int radio2=0x7f080011;
         public static final int radioGroup1=0x7f08000e;
-        public static final int textView1=0x7f080016;
-        public static final int textView2=0x7f080017;
-        public static final int textView3=0x7f080014;
-        public static final int textView4=0x7f080012;
+        public static final int textView1=0x7f080017;
+        public static final int textView2=0x7f080018;
+        public static final int textView3=0x7f080015;
+        public static final int textView4=0x7f080013;
         public static final int textView5=0x7f08000d;
         public static final int userA=0x7f080004;
         public static final int user_actual=0x7f080003;
@@ -91,6 +92,7 @@ public final class R {
         public static final int email1=0x7f05001a;
         public static final int emailView=0x7f05001b;
         public static final int femenino=0x7f05000b;
+        public static final int guardar=0x7f050023;
         public static final int hello_world=0x7f050013;
         public static final int masculino=0x7f05000a;
         public static final int otro=0x7f05000c;
