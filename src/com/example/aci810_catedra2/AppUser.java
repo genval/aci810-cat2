@@ -3,7 +3,6 @@ package com.example.aci810_catedra2;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.View;
@@ -74,8 +73,9 @@ public class AppUser extends Activity {
 		return true;
 	}
 
+		
 	public void onGuardar(View view){
-		Intent intent = new Intent(this,AppActivity.class);
+		
 		EditText email = (EditText)findViewById(R.id.emailView); 
 		String email1 = email.getText().toString(); 
 		EditText user = (EditText)findViewById(R.id.userA);
@@ -95,7 +95,7 @@ public class AppUser extends Activity {
 		RadioButton radBut3 = (RadioButton)findViewById(R.id.radio2);
 		Boolean rb2 = radBut3.isChecked();
 
-		SharedPreferences shadPref = getSharedPreferences("prefLog",Context.MODE_PRIVATE);
+		SharedPreferences shadPref = getApplicationContext().getSharedPreferences("prefLog",Context.MODE_PRIVATE);
 		SharedPreferences.Editor editor = shadPref.edit();
 		
 		editor.putString(EMAIL,email1);
@@ -108,9 +108,10 @@ public class AppUser extends Activity {
 		editor.putBoolean(MASCULINO, rb1);
 		editor.putBoolean(OTRO, rb2);
 		editor.commit();
-		startActivity(intent);		
+			
 		
-		
+	
+		 
 	}
 
 }
